@@ -1,0 +1,25 @@
+import React from 'react'
+import './Footer.css'
+import Github from '../../assets/github.png'
+import Instagram from '../../assets/instagram.png'
+import IinkedIn from '../../assets/linkedin.png'
+import logo from '../../assets/logo.png'
+export default function Footer() {
+    return (
+        <div className='Footer-container'>
+            <hr />
+            <div className="footer">
+                <div className="social-links">
+                    <img src={Github} alt="" />
+                    <img src={Instagram} alt="" />
+                    <img src={IinkedIn} alt="" />
+                </div>
+                <div className="logo-f">
+                    <img src={logo} alt="" />
+                </div>
+            </div>
+            <div className="blur blur-f-1"></div>
+            <div className="blur blur-f-2"></div>
+        </div>
+    )
+}
